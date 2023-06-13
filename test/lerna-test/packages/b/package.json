@@ -1,5 +1,5 @@
 {
-  "name": "@lerna-test-group/a",
+  "name": "@lerna-test-group/b",
   "version": "0.0.0",
   "description": "> TODO: description",
   "author": "raven <raven.lin.010@gmail.com>",
@@ -18,12 +18,9 @@
     "url": "git+https://github.com/ravensroom/node-cli.git"
   },
   "scripts": {
-    "test": "node ./__tests__/a.test.js"
+    "test": "node ./__tests__/b.test.js"
   },
   "bugs": {
     "url": "https://github.com/ravensroom/node-cli/issues"
-  },
-  "dependencies": {
-    "chalk": "^5.2.0"
   }
 }
