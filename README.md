@@ -40,12 +40,13 @@ For a command, like `npm install prisma`, The execution process is approximately
 - finish and exit
 
 There are several ways to play around with home-made commands locally,
-/my-command
-../package.json ({ "bin": { "my-command": "bin/main.js" }})
-../bin
-../../main.js
 
 ```sh
+# /my-command
+# ../package.json ({ "bin": { "my-command": "bin/main.js" }})
+# ../bin
+# ../../main.js
+
 # cd to /my-command
 $npm link # sudo
 $my-command # call globally
