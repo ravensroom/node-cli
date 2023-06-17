@@ -1,0 +1,12 @@
+0 silly argv {
+0 silly argv   _: [ 'add' ],
+0 silly argv   globs: [ 'packages/esm-entry' ],
+0 silly argv   lernaVersion: '6.6.2',
+0 silly argv   '$0': '/home/raven/projects/node-cli/test/cjs-esm-test/module/node_modules/.bin/lerna',
+0 silly argv   pkg: 'esm2'
+0 silly argv }
+1 notice cli v6.6.2
+2 verbose rootPath /home/raven/projects/node-cli/test/cjs-esm-test/module
+3 error esm2: No versions available for esm2
+3 error     at pickManifest (/home/raven/projects/node-cli/test/cjs-esm-test/module/node_modules/npm-pick-manifest/lib/index.js:140:25)
+3 error     at module.exports (/home/raven/projects/node-cli/test/cjs-esm-test/module/node_modules/npm-pick-manifest/lib/index.js:187:16)

@@ -62,7 +62,9 @@ const createInitCommand = require('@ncli/init');
 createInitCommand(program);
 ```
 
-### logging
+### utils
+
+/log
 
 basically just using npmlog everywhere for debugging,
 and better cli logging UI.

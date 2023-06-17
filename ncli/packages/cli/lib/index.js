@@ -10,7 +10,9 @@ function checkNodeVersion() {
   log.verbose('node version', process.version);
   if (!semver.gte(process.version, MINIMUM_NODE_VERSION)) {
     throw new Error(
-      `ncli needs at least node of version ${MINIMUM_NODE_VERSION} ro tun`
+      chalk.red(
+        `ncli needs at least node of version ${MINIMUM_NODE_VERSION} ro run`
+      )
     );
   }
 }

@@ -1,0 +1,26 @@
+{
+  "name": "cjs",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "raven <raven.lin.010@gmail.com>",
+  "homepage": "https://github.com/ravensroom/node-cli#readme",
+  "license": "ISC",
+  "main": "lib/cjs.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ravensroom/node-cli.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/cjs.test.js"
+  },
+  "bugs": {
+    "url": "https://github.com/ravensroom/node-cli/issues"
+  }
+}

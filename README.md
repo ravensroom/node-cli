@@ -81,3 +81,12 @@ $npm publish
 - chalk: coloring
 - ora: spinner
 - workspace, learna: package management
+- how to use Common JS and ES module together without creating conflicts
+
+## @ncli
+
+A CLI tool created for the purpose of generic CLI development.
+
+- encapsulates command implementation
+- handles logging, debugging
+  See ncli/README for more details...
