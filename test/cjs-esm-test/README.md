@@ -19,6 +19,23 @@ export const add = (a, b) => a + b;
 // __dirname __filename not applicable in esm
 ```
 
+How to require json
+
+```js
+import { createRequire } from 'module';
+const require = createRequire(import.meta.url);
+const data = require('./data.json');
+```
+
+use 'fs' as recommended by nodejs doc
+
+```js
+import { readFile } from 'fs/promises';
+const json = JSON.parse(
+  await readFile(new URL('./some-file.json', import.meta.url))
+);
+```
+
 ## add esm to cjs
 
 It's not recommended.
