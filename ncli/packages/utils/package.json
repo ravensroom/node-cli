@@ -1,7 +1,7 @@
 {
-  "name": "@ncli/init",
+  "name": "@ncli/utils",
   "version": "0.0.0",
-  "description": "Initialize a command",
+  "description": "> TODO: description",
   "author": "raven <raven.lin.010@gmail.com>",
   "homepage": "https://github.com/ravensroom/node-cli#readme",
   "license": "ISC",
@@ -18,13 +18,12 @@
     "url": "git+https://github.com/ravensroom/node-cli.git"
   },
   "scripts": {
-    "test": "node ./__tests__/init.test.js"
+    "test": "node ./__tests__/utils.test.js"
   },
   "bugs": {
     "url": "https://github.com/ravensroom/node-cli/issues"
   },
   "dependencies": {
-    "@ncli/command": "^0.0.0",
-    "@ncli/utils": "^0.0.0"
+    "npmlog": "^7.0.1"
   }
 }

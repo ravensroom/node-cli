@@ -1,9 +1,11 @@
 const { program } = require('commander');
 const pkg = require('../package.json');
+const { log } = require('@ncli/utils');
 
 const createInitCommand = require('@ncli/init');
 
 function cli(args) {
+  log.info('version', pkg.version);
   program
     .name(Object.keys(pkg.bin)[0])
     .usage('<command> [options]')

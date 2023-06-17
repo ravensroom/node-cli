@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "@ncli/init": "^0.0.0",
+    "@ncli/utils": "^0.0.0",
     "commander": "^10.0.1",
     "import-local": "^3.1.0",
     "npmlog": "^7.0.1"

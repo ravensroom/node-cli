@@ -1,4 +1,5 @@
 const Command = require('@ncli/command');
+const { log } = require('@ncli/utils');
 
 class InitCommand extends Command {
   get command() {
@@ -14,15 +15,15 @@ class InitCommand extends Command {
   }
 
   action([name, opts]) {
-    console.log('init', name, opts);
+    log.verbose('init', name, opts);
   }
 
   preAction() {
-    console.log('pre');
+    log.verbose('pre');
   }
 
   postAction() {
-    console.log('post');
+    log.verbose('post');
   }
 }
 
