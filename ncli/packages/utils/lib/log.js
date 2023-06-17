@@ -1,8 +1,8 @@
 const log = require('npmlog');
+const debug = require('./debug');
 
-if (process.argv.includes('--debug' || process.argv.includes('-d'))) {
-  log.level = 'verbose';
-} else {
+if (debug()) log.level = 'verbose';
+else {
   log.level = 'info';
 }
 
