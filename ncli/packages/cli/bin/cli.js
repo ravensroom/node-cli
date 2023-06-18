@@ -1,11 +1,13 @@
 #!/usr/bin/env node
+import importLocal from 'import-local';
+import log from 'npmlog';
 
-const importLocal = require('import-local');
-const log = require('npmlog');
+import entry from '../lib/index.js';
 
-const entry = require('../lib/index');
+import { fileURLToPath } from 'node:url';
+const fileName = fileURLToPath(import.meta.url);
 
-if (importLocal(__filename)) {
+if (importLocal(fileName)) {
   log.info('ncli', 'Using local version');
 } else {
   entry(process.argv.slice(2));

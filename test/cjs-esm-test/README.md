@@ -19,6 +19,17 @@ export const add = (a, b) => a + b;
 // __dirname __filename not applicable in esm
 ```
 
+How to get filename, dirname
+
+```js
+import { fileURLToPath } from 'node:url';
+const fileName = fileURLToPath(import.meta.url);
+
+// Or
+import { fileName } from 'dirname-filename-esm';
+const filename = fileName(import.meta);
+```
+
 How to require json
 
 ```js
@@ -34,6 +45,12 @@ import { readFile } from 'fs/promises';
 const json = JSON.parse(
   await readFile(new URL('./some-file.json', import.meta.url))
 );
+```
+
+an experimental feature
+
+```js
+import pkg from '../package.json' assert { type: 'json' };
 ```
 
 ## add esm to cjs

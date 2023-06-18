@@ -1,5 +1,5 @@
-const Command = require('@ncli/command');
-const { log } = require('@ncli/utils');
+import Command from '@ncli/command';
+import { log } from '@ncli/utils';
 
 class InitCommand extends Command {
   get command() {
@@ -31,4 +31,4 @@ function Init(instance) {
   return new InitCommand(instance);
 }
 
-module.exports = Init;
+export default Init;

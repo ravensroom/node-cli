@@ -26,5 +26,6 @@
   "dependencies": {
     "@ncli/command": "^0.0.0",
     "@ncli/utils": "^0.0.0"
-  }
+  },
+  "type": "module"
 }

@@ -1,7 +1,4 @@
-const log = require('./log');
-const debug = require('./debug');
+import log from './log.js';
+import debug from './debug.js';
 
-module.exports = {
-  log,
-  debug,
-};
+export { log, debug };

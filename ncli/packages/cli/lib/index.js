@@ -1,8 +1,12 @@
-const { program } = require('commander');
-const semver = require('semver');
-const createInitCommand = require('@ncli/init');
-const pkg = require('../package.json');
-const { log, debug } = require('@ncli/utils');
+import { program } from 'commander';
+import semver from 'semver';
+import createInitCommand from '@ncli/init';
+import { readFileSync } from 'fs';
+import { log, debug } from '@ncli/utils';
+
+const pkg = JSON.parse(
+  readFileSync(new URL('../package.json', import.meta.url))
+);
 
 const MINIMUM_NODE_VERSION = '14.0.0';
 
@@ -44,4 +48,4 @@ function cli(args) {
   program.parse(process.argv);
 }
 
-module.exports = cli;
+export default cli;
