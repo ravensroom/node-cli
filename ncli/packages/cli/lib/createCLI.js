@@ -39,7 +39,7 @@ export default function createCLI() {
     }
   });
   program.on('command:*', function (obj) {
-    log.error('unknow command', obj[0]);
+    log.error('Unknown command:', obj[0]);
   });
   return program;
 }

@@ -1,0 +1,13 @@
+0 silly argv {
+0 silly argv   _: [ 'add' ],
+0 silly argv   globs: [ '@packages/cli' ],
+0 silly argv   lernaVersion: '6.6.2',
+0 silly argv   '$0': '/home/raven/projects/node-cli/ncli/node_modules/.bin/lerna',
+0 silly argv   pkg: 'dirname-pathname-esm'
+0 silly argv }
+1 notice cli v6.6.2
+2 verbose rootPath /home/raven/projects/node-cli/ncli
+3 error HttpErrorGeneral: 404 Not Found - GET https://registry.npmjs.org/dirname-pathname-esm - Not found
+3 error     at /home/raven/projects/node-cli/ncli/node_modules/npm-registry-fetch/lib/check-response.js:95:15
+3 error     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+3 error     at async RegistryFetcher.packument (/home/raven/projects/node-cli/ncli/node_modules/pacote/lib/registry.js:87:19)
