@@ -1,14 +1,6 @@
 import createInitCommand from '@ncli/init';
-import { log, debug } from '@ncli/utils';
 import createCLI from './createCLI.js';
-
-process.on('uncaughtException', (e) => {
-  if (debug()) {
-    log.error(e);
-  } else {
-    log.error(e.message);
-  }
-});
+import './exception.js';
 
 function cli(args) {
   const program = createCLI();

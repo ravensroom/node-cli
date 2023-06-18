@@ -33,5 +33,13 @@ export default function createCLI() {
     .version(pkg.version)
     .option('-d, --debug', 'Debug mode on', false)
     .hook('preAction', preAction);
+  program.on('option:debug', function () {
+    if (program.opts().debug) {
+      log.verbose('debug', 'launch debug mode');
+    }
+  });
+  program.on('command:*', function (obj) {
+    log.error('unknow command', obj[0]);
+  });
   return program;
 }
